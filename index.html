@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="./stylesheet.css"
+		/>
+		<title>Pizza Time</title>
+	</head>
+	<body>
+		<form>
+			<!--User Info-->
+			<fieldset>
+				<legend><h3>User Information</h3></legend>
+				<!--User inputs their account username-->
+				<label for="userName">User Name: </label>
+				<abbr title="Required">*</abbr>
+				<input
+					type="text"
+					id="username"
+					required
+				/>
+				<br />
+
+				<!--User inputs their account password-->
+				<label for="userPassword">Password: </label>
+				<abbr title="Required">*</abbr>
+				<input
+					type="password"
+					id="userPassword"
+					required
+				/>
+
+				<!--Spacing between user login and payment info -->
+				<br />
+				<br />
+
+				<!--User inputs payment info-->
+				<div>
+					<!--User inputs the credit/debit card's parent company-->
+					<label for="cardType">Card type: </label>
+					<abbr title="Required">*</abbr>
+					<select
+						name="cardType"
+						id="cardType"
+						required
+					>
+						<option value="Visa">Visa</option>
+						<option value="MasterCard">MasterCard</option>
+						<option value="American Express">American Express</option>
+						<option value="Discovery">Discovery</option>
+					</select>
+					<br />
+
+					<!--User inputs the credit/debit card's number-->
+					<label for="cardNumber">Card Number: </label>
+					<abbr title="Required">*</abbr>
+					<input
+						type="password"
+						name="cardNumber"
+						id="cardNumber"
+						required
+					/>
+					<br />
+
+					<!--User inputs the credit/debit card's expiration date-->
+					<label for="cardExpiration">Expiration date: </label>
+					<abbr title="Required">*</abbr>
+					<input
+						type="date"
+						name="cardExpiration"
+						id="cardExpiration"
+						required
+					/>
+					<br />
+				</div>
+			</fieldset>
+
+			<!--User selects a drink-->
+			<fieldset>
+				<legend>
+					<h3>Please select a drink <abbr title="Required">*</abbr></h3>
+				</legend>
+				<!--Drink selection-->
+				<div>
+					<!--Coke-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="coke"
+						required
+					/>
+					<label for="coke">Coke</label>
+					<br />
+
+					<!--Diet Coke-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="dietCoke"
+						required
+					/>
+					<label for="dietCoke">Diet Coke</label>
+					<br />
+
+					<!--Pepsi-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="pepsi"
+						required
+					/>
+					<label for="pepsi">Pepsi</label>
+					<br />
+
+					<!--Diet Pepsi-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="dietPepsi"
+						required
+					/>
+					<label for="dietPepsi">Diet Pepsi</label>
+					<br />
+
+					<!--Sprite-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="sprite"
+						required
+					/>
+					<label for="sprite">Sprite</label>
+					<br />
+
+					<!--Sprite Zero-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="spriteZero"
+						required
+					/>
+					<label for="spriteZero">Sprite Zero</label>
+					<br />
+
+					<!--Mountain Dew-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="mountainDew"
+						required
+					/>
+					<label for="mountainDew">Mountain Dew</label>
+					<br />
+
+					<!--Diet Mountain Dew-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="dietMountainDew"
+						required
+					/>
+					<label for="dietMountainDew">Diet Mountain Dew</label>
+					<br />
+
+					<!--Fanta-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="fanta"
+						required
+					/>
+					<label for="fanta">Fanta</label>
+					<br />
+
+					<!--Dr. Pepper-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="drPepper"
+						required
+					/>
+					<label for="drPepper">Dr. Pepper</label>
+					<br />
+
+					<!--Water-->
+					<input
+						type="radio"
+						name="drinkSelection"
+						id="water"
+						required
+					/>
+					<label for="water">Water</label>
+					<br />
+				</div>
+			</fieldset>
+
+			<!--Optional: User Topping Preferences-->
+			<fieldset>
+				<legend>
+					<h3>Please select your pizza preferences</h3>
+				</legend>
+
+				<!--User selects what toppings they would like, otherwise they recieve a plain pizza-->
+				<div>
+					<h4>Select your pizza style</h4>
+					<select
+						name="pizzaStyle"
+						id="pizzaStyle"
+						required
+					>
+						<option value="chicagoStyle">Chicago/Deep Dish</option>
+						<option value="californiaStyle">California</option>
+						<option value="newYorkStyle">New York/Thin</option>
+						<option value="sicilianStyle">Sicilian</option>
+					</select>
+				</div>
+				<br />
+
+				<!--User selects what toppings they would like, otherwise they recieve a plain pizza-->
+				<div>
+					<h4>Optional: Select your Pizza Topping(s)</h4>
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaCheese"
+					/>
+					<label for="pizzaCheese">Cheese</label>
+					<br />
+
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaVeggie"
+					/>
+					<label for="pizzaVeggie">Veggie</label>
+					<br />
+
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaPepperoni"
+					/>
+					<label for="pizzaPepperoni">Pepperoni</label>
+					<br />
+
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaMeat"
+					/>
+					<label for="pizzaMeat">Meat</label>
+					<br />
+
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaMeat?"
+					/>
+					<label for="pizzaMeat?">Limited time only: Mystery Meat</label>
+					<br />
+
+					<input
+						type="checkbox"
+						name="pizzaType"
+						id="pizzaHawaiian"
+						disabled
+					/>
+					<label for="pizzaHawaiian">Hawaiian</label>
+				</div>
+				<br />
+			</fieldset>
+
+			<!--Optional: Special Instructions-->
+			<fieldset>
+				<legend><h3>Special Instructions</h3></legend>
+				<label for="specialInstructions"
+					>Please put any special instructions for the order in this box</label
+				>
+				<br />
+				<textarea
+					name="specialInstructions"
+					id="specialInstructions"
+				></textarea>
+			</fieldset>
+
+			<!--Submission button-->
+			<button type="submit>">Submit Order</button>
+		</form>
+	</body>
+</html>

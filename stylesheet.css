@@ -1,0 +1,8 @@
+fieldset {
+	border-style: ridge;
+	border-radius: 16px;
+	border-width: 14px;
+
+	background-color: #f6cc78;
+	border-color: #cc882f;
+}
